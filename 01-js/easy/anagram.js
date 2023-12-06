@@ -11,7 +11,7 @@ function isAnagram(str1, str2) {
   }
 
   // Normalize the strings: remove non-letter characters and convert to lowercase
-  const normalizeString = (str) => str.replace(/[^\w]/g, '').toLowerCase();
+  const normalizeString = (string) => string.replace(/[^\w]/g, '').toLowerCase();
 
   str1 = normalizeString(str1);
   str2 = normalizeString(str2);
