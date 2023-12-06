@@ -1,0 +1,61 @@
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+#define f(x) sqrt(1-pow(x,2))
+
+struct Piresults
+{
+double approx;
+double error;
+};
+
+double pi_approx(int N){
+double lower, upper, integration=0.0, stepSize, k, approx, error;
+int i;
+lower = 0.0;
+upper =1.0;
+stepSize = (upper - lower)/N;
+integration = f(lower) + f(upper);
+
+for(i=1; i<= N-1; i++)
+{
+k = lower + i*stepSize;
+integration = integration + 2 * (f(k));
+}
+
+integration = integration * stepSize/2;
+approx = 4*integration;
+error = M_PI - approx;
+
+Piresults x;
+x.approx = approx;
+x.error = error;
+
+cout <<"\nResult Information for N = " << N << " value: " << endl;
+cout <<"Integration approx value: " << fixed << setprecision(10) << x.approx << endl;
+return x.approx;
+}
+
+int* ten_pi(int N=100) {
+double pi_estimate;
+pi_estimate = pi_approx(N);
+int* pi_arr = (int*) malloc(sizeof(int));
+long num = pi_estimate*pow(10,10);
+int i = 0;
+int digit;
+while(i<10){
+digit = num % 10;
+num = num/10;
+pi_arr[i] = digit;
+i++;
+}
+return pi_arr;
+}
+int main()
+{
+int *pi_arr = ten_pi(596);
+cout << "\nDynamic Array print: ";
+for ( int i = 9; i >= 0; i--)
+cout << *(pi_arr + i) << ", ";
+}

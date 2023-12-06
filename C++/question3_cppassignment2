@@ -1,0 +1,53 @@
+#include <iostream>
+#include <math.h>
+#include <bits/stdc++.h>
+#include <iomanip>
+using namespace std;
+
+#define f(x) sqrt(1-pow(x,2))
+
+struct Piresults2
+{
+double approx;
+int intervals;
+};
+
+int pi_approx2(double error){
+double approx, integration1, check,lower, upper, integration=0.0, stepSize, k;
+int i;
+lower = 0.0;
+upper = 1.0;
+approx = M_PI - error;
+integration1 = approx/4;
+check = integration1;
+int n=0;
+while(n<=INT_MAX) {
+if (check <= pow(10,-8)) break;
+n++;
+for(int i=1; i<= n-1; i++) {
+stepSize = (upper - lower)/n;
+integration = f(lower) + f(upper);
+for(int j=1; j<= n-1; j++)
+{
+k = lower + j*stepSize;
+integration = integration + 2 * (f(k));
+}
+integration = integration * (stepSize/2);
+check = abs(integration-integration1);
+}
+}
+
+Piresults2 x;
+x.approx = approx;
+x.intervals = n;
+
+cout <<"\nResult Information." << endl;
+cout <<"Integration approx value: " << fixed << setprecision(10) << x.approx << endl;
+cout << "Approx number of Intervals: "<< x.intervals << endl;
+return 0;
+}
+
+int main()
+{
+pi_approx2(0.0000808182);
+}
