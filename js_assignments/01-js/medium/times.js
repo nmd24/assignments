@@ -31,4 +31,4 @@ function calculateTime(n) {
 // Example usage
 console.log('Time taken for sum from 1-100:', calculateTime(100));
 console.log('Time taken for sum from 1-100000:', calculateTime(100000));
-console.log('Time taken for sum from 1-10000000000:', calculateTime(10000000000));
+console.log('Time taken for sum from 1-10000000:', calculateTime(10000000));
