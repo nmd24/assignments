@@ -13,6 +13,6 @@ function sum(n){
 app.get('/', function(req, res) {
     const n = req.query.n;
     const ans = sum(n);
-    res.send("Welcome bitches! " + ans)
+    res.send("Welcome to my site! " + ans)
 })
 app.listen(3001);
