@@ -1,0 +1,9 @@
+2024-01-10/10:32:06		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011962_120212.csv
+2024-01-10/10:32:06		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2024-01-10/10:32:06		Invalid File Name!! File moved to Bad Raw Folder :: creditCardFraud_28011961_12.csv
+2024-01-10/10:32:06		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011963_120213.csv
+2024-01-10/10:34:36		Error occured while validating FileName [Errno 2] No such file or directory: 'Prediction_Batch_files/creditCardFraud_28011975_120225.csv'
+2024-01-10/10:36:44		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011962_120212.csv
+2024-01-10/10:36:44		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011960_120210.csv
+2024-01-10/10:36:44		Invalid File Name!! File moved to Bad Raw Folder :: creditCardFraud_28011961_12.csv
+2024-01-10/10:36:44		Valid File name!! File moved to GoodRaw Folder :: creditCardFraud_28011963_120213.csv

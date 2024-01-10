@@ -1,0 +1,4 @@
+2024-01-10/10:15:11		Starting Model Training
+2024-01-10/10:15:27		Model Training Completed Successfully
+2024-01-10/10:25:05		Starting Model Training
+2024-01-10/10:25:20		Model Training Completed Successfully

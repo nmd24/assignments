@@ -1,8 +1,7 @@
 # 3.4 Queue Via Stacks
 import unittest
 
-from chapter_03.stack import Stack
-
+from stack import Stack
 
 class MyQueue:
     def __init__(self):

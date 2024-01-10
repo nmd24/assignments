@@ -1,6 +1,5 @@
 import time
 
-
 class Node:
     def __init__(self, data, next_node=None):
         self.data = data
@@ -8,7 +7,6 @@ class Node:
 
     def __str__(self):
         return str(self.data)
-
 
 class LinkedList:
     def __init__(self, head=None):
@@ -38,24 +36,18 @@ class LinkedList:
             size += 1
             current_node = current_node.next_node
         return size
-
-
 # Animal Definitions
-
 
 class Animal:
     def __init__(self, name):
         self.time_admitted = time.time()
         self.name = name
 
-
 class Cat(Animal):
     pass
 
-
 class Dog(Animal):
     pass
-
 
 class AnimalShelter(LinkedList):
     def enqueue(self, animal):
@@ -86,7 +78,6 @@ class AnimalShelter(LinkedList):
             previous_node = current_node
             current_node = current_node.next_node
         return None
-
 
 def test_enqueue():
     animal_shelter = AnimalShelter()

@@ -13,7 +13,6 @@ from Blackscholes import bsm_call_imp_vol, bsm_put_imp_vol, bsm_vega, bsm_call_d
 # Step 2: Save the API key for easy access:
 API_KEY = {"X-API-key": "IB5GYDSA"}
 
-
 def main():
     # Step 3: Create a Session object to manage connections and requests to the RIT client:
     with requests.Session() as s:
@@ -90,19 +89,6 @@ def main():
                 # item['vega']=vega
             # Printing entire portfolio
             print(res_list)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 if __name__=="__main__":
     main()

@@ -1,12 +1,9 @@
 import unittest
-
-
 class Node:
     def __init__(self, value):
         self.value = value
         self.above = None
         self.below = None
-
 
 class Stack:
     def __init__(self, capacity):
@@ -54,7 +51,6 @@ class Stack:
         self.size -= 1
         return b.value
 
-
 class SetOfStacks:
     def __init__(self, capacity):
         self.capacity = capacity
@@ -100,7 +96,6 @@ class SetOfStacks:
             stack.push(v)
         return removed_item
 
-
 class Tests(unittest.TestCase):
     def test_stacks(self):
         stacks = SetOfStacks(5)
@@ -119,7 +114,6 @@ class Tests(unittest.TestCase):
         for _ in range(31):
             lst.append(stacks.pop_at(0))
         assert lst == list(range(4, 35))
-
 
 if __name__ == "__main__":
     unittest.main()

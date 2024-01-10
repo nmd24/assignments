@@ -2,7 +2,6 @@
 # o(n) time
 # o(n) space
 
-
 def find_volume(a):
     if len(a) <= 2:
         return 0
@@ -21,7 +20,6 @@ def find_volume(a):
             volume += min_height - a[i]
 
     return volume
-
 
 def test_find_volume():
     hist = [0, 0, 4, 0, 0, 6, 0, 0, 3, 0, 5, 0, 1, 0, 0, 0]

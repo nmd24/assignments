@@ -1,6 +1,5 @@
 from typing import Optional, Sequence
 
-
 def index(nums: Sequence[int], target: int) -> Optional[int]:
     if not nums:
         return None
@@ -29,12 +28,10 @@ def index(nums: Sequence[int], target: int) -> Optional[int]:
             return mid
     return None
 
-
 def search_rotated(array: Sequence[int], num: int) -> Optional[int]:
     if not array:
         return None
     return _recursive_search(array, num, 0, len(array) - 1)
-
 
 def _recursive_search(array, num, start, end):
     middle = (end - start) // 2 + start
@@ -42,7 +39,6 @@ def _recursive_search(array, num, start, end):
         return middle
     if end - start <= 0:
         return None
-
     result = None
     if array[start] < array[middle]:  # left side is normal
         if array[start] <= num < array[middle]:
@@ -63,7 +59,6 @@ def _recursive_search(array, num, start, end):
                 result = _recursive_search(array, num, middle + 1, end)
     return result
 
-
 test_cases = [
     # array, target, valid solutions
     ([15, 16, 19, 20, 25, 1, 3, 4, 5, 7, 10, 14], 5, 8),
@@ -76,7 +71,6 @@ test_cases = [
 
 testable_functions = [index, search_rotated]
 
-
 def test_index():
     for array, target, expected in test_cases:
         for method in testable_functions:
@@ -88,7 +82,6 @@ def test_index():
                     f"arr:{array} target:{target} calculated:{ind} expected:{expected}"
                 )
                 assert ind == expected, error_msg
-
 
 if __name__ == "__main__":
     test_index()

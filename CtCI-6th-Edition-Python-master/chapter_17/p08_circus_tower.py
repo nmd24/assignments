@@ -18,7 +18,6 @@ def find_max_people(height_weight_pairs):
         max_so_far = max(max_so_far, dp[i])
     return max_so_far
 
-
 test_cases = [
     # height_weight_pairs, expected_length
     ([], 0),
@@ -28,7 +27,6 @@ test_cases = [
     ([(65, 100), (55, 40), (75, 90), (80, 120)], 3),
     ([(65, 100), (70, 150), (56, 90), (75, 190), (60, 95), (68, 110)], 6),
 ]
-
 
 def test_circus_tower():
     for height_weight_pairs, expected_length in test_cases:

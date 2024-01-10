@@ -1,0 +1,6 @@
+2024-01-10/10:44:41		Starting Model Predict
+2024-01-10/10:44:41		Error occurred during model predict: prediction.__init__() missing 1 required positional argument: 'path'
+2024-01-10/10:48:59		Starting Model Predict
+2024-01-10/10:48:59		Error occurred during model predict: prediction.__init__() missing 1 required positional argument: 'path'
+2024-01-10/10:49:21		Starting Model Predict
+2024-01-10/10:49:22		Model Predicting Completed Successfully

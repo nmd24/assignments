@@ -15,7 +15,6 @@ def sorted_nosize_search(listy, num):
             limit = True
     return bi_search(listy, num, index // 2, index)
 
-
 def bi_search(listy, num, low, high):
     while low <= high:
         middle = (high + low) // 2
@@ -32,7 +31,6 @@ def bi_search(listy, num, low, high):
         else:
             return middle
     return -1
-
 
 test_cases = [
     (([1, 2, 3, 4, 5, 6, 7, 8, 9], 0), -1),
@@ -57,7 +55,6 @@ def test_sorted_search():
             calculated = function(n, m)
             error_msg = f"{function.__name__}: {calculated} != {expected}"
             assert function(n, m) == expected, error_msg
-
 
 if __name__ == "__main__":
     test_sorted_search()

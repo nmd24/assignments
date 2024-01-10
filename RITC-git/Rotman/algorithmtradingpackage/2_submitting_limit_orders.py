@@ -31,10 +31,9 @@ def main():
             lmt_order = resp.json()
             id = lmt_order["order_id"]
             status = resp2.json()
-
             print(f"The limit sell order was submitted successfully with ID: {id}")
             print(f"The order is open = {status}")
         else:
             print("The order was not successfully submitted!")
-if __name__=="__main__":
+if __name__=="__main__":    
     main()

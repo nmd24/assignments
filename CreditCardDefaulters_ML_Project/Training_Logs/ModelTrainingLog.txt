@@ -1,0 +1,132 @@
+2024-01-10/10:15:11		Start of Training
+2024-01-10/10:15:11		Entered the get_data method of the Data_Getter class
+2024-01-10/10:15:11		Data Load Successful.Exited the get_data method of the Data_Getter class
+2024-01-10/10:15:11		Entered the separate_label_feature method of the Preprocessor class
+2024-01-10/10:15:11		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2024-01-10/10:15:11		Entered the is_null_present method of the Preprocessor class
+2024-01-10/10:15:11		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2024-01-10/10:15:11		Entered the elbow_plot method of the KMeansClustering class
+2024-01-10/10:15:17		The optimum number of clusters is: 4 . Exited the elbow_plot method of the KMeansClustering class
+2024-01-10/10:15:17		Entered the create_clusters method of the KMeansClustering class
+2024-01-10/10:15:18		Entered the save_model method of the File_Operation class
+2024-01-10/10:15:18		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:15:18		succesfully created 4clusters. Exited the create_clusters method of the KMeansClustering class
+2024-01-10/10:15:18		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:18		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:18		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:18		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:18		Entered the get_best_model method of the Model_Finder class
+2024-01-10/10:15:18		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:15:23		XGBoost best params: {'max_depth': 7, 'n_estimators': 50, 'random_state': 0}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:15:23		AUC for XGBoost:0.9297022901766934
+2024-01-10/10:15:23		Entered the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:15:23		Naive Bayes best params: {'var_smoothing': 0.5}. Exited the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:15:23		AUC for RF:0.6432532143984013
+2024-01-10/10:15:23		Entered the save_model method of the File_Operation class
+2024-01-10/10:15:23		Model File XGBoost3 saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:15:23		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:23		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:23		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:23		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:23		Entered the get_best_model method of the Model_Finder class
+2024-01-10/10:15:23		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:15:24		XGBoost best params: {'max_depth': 3, 'n_estimators': 50, 'random_state': 0}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:15:24		AUC for XGBoost:0.9457831325301205
+2024-01-10/10:15:24		Entered the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:15:24		Naive Bayes best params: {'var_smoothing': 0.5}. Exited the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:15:24		AUC for RF:0.7762405554421073
+2024-01-10/10:15:24		Entered the save_model method of the File_Operation class
+2024-01-10/10:15:24		Model File XGBoost1 saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:15:24		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:24		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:24		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:24		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:24		Entered the get_best_model method of the Model_Finder class
+2024-01-10/10:15:24		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:15:26		XGBoost best params: {'max_depth': 3, 'n_estimators': 100, 'random_state': 0}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:15:26		AUC for XGBoost:0.8275009077705157
+2024-01-10/10:15:26		Entered the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:15:26		Naive Bayes best params: {'var_smoothing': 0.5}. Exited the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:15:26		AUC for RF:0.6339528867102397
+2024-01-10/10:15:26		Entered the save_model method of the File_Operation class
+2024-01-10/10:15:26		Model File XGBoost0 saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:15:26		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:26		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:26		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:26		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:15:26		Entered the get_best_model method of the Model_Finder class
+2024-01-10/10:15:26		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:15:27		XGBoost best params: {'max_depth': 3, 'n_estimators': 50, 'random_state': 0}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:15:27		AUC for XGBoost:0.9778156996587031
+2024-01-10/10:15:27		Entered the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:15:27		Naive Bayes best params: {'var_smoothing': 0.5}. Exited the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:15:27		AUC for RF:0.8352606510074068
+2024-01-10/10:15:27		Entered the save_model method of the File_Operation class
+2024-01-10/10:15:27		Model File XGBoost2 saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:15:27		Successful End of Training
+2024-01-10/10:25:05		Start of Training
+2024-01-10/10:25:05		Entered the get_data method of the Data_Getter class
+2024-01-10/10:25:05		Data Load Successful.Exited the get_data method of the Data_Getter class
+2024-01-10/10:25:05		Entered the separate_label_feature method of the Preprocessor class
+2024-01-10/10:25:05		Label Separation Successful. Exited the separate_label_feature method of the Preprocessor class
+2024-01-10/10:25:05		Entered the is_null_present method of the Preprocessor class
+2024-01-10/10:25:05		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2024-01-10/10:25:05		Entered the elbow_plot method of the KMeansClustering class
+2024-01-10/10:25:11		The optimum number of clusters is: 4 . Exited the elbow_plot method of the KMeansClustering class
+2024-01-10/10:25:11		Entered the create_clusters method of the KMeansClustering class
+2024-01-10/10:25:11		Entered the save_model method of the File_Operation class
+2024-01-10/10:25:11		Model File KMeans saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:25:11		succesfully created 4clusters. Exited the create_clusters method of the KMeansClustering class
+2024-01-10/10:25:11		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:11		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:11		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:11		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:11		Entered the get_best_model method of the Model_Finder class
+2024-01-10/10:25:11		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:25:16		XGBoost best params: {'max_depth': 7, 'n_estimators': 50, 'random_state': 0}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:25:16		AUC for XGBoost:0.9297022901766934
+2024-01-10/10:25:16		Entered the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:25:16		Naive Bayes best params: {'var_smoothing': 0.5}. Exited the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:25:16		AUC for NB:0.6432532143984013
+2024-01-10/10:25:16		Entered the save_model method of the File_Operation class
+2024-01-10/10:25:16		Model File XGBoost3 saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:25:16		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:16		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:16		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:16		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:16		Entered the get_best_model method of the Model_Finder class
+2024-01-10/10:25:16		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:25:17		XGBoost best params: {'max_depth': 3, 'n_estimators': 50, 'random_state': 0}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:25:17		AUC for XGBoost:0.9457831325301205
+2024-01-10/10:25:17		Entered the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:25:17		Naive Bayes best params: {'var_smoothing': 0.5}. Exited the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:25:17		AUC for NB:0.7762405554421073
+2024-01-10/10:25:17		Entered the save_model method of the File_Operation class
+2024-01-10/10:25:17		Model File XGBoost1 saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:25:17		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:17		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:17		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:17		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:17		Entered the get_best_model method of the Model_Finder class
+2024-01-10/10:25:17		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:25:19		XGBoost best params: {'max_depth': 3, 'n_estimators': 100, 'random_state': 0}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:25:19		AUC for XGBoost:0.8275009077705157
+2024-01-10/10:25:19		Entered the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:25:19		Naive Bayes best params: {'var_smoothing': 0.5}. Exited the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:25:19		AUC for NB:0.6339528867102397
+2024-01-10/10:25:19		Entered the save_model method of the File_Operation class
+2024-01-10/10:25:19		Model File XGBoost0 saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:25:19		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:19		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:19		Entered the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:19		scaling for numerical values successful. Exited the scale_numerical_columns method of the Preprocessor class
+2024-01-10/10:25:19		Entered the get_best_model method of the Model_Finder class
+2024-01-10/10:25:19		Entered the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:25:19		XGBoost best params: {'max_depth': 3, 'n_estimators': 50, 'random_state': 0}. Exited the get_best_params_for_xgboost method of the Model_Finder class
+2024-01-10/10:25:19		AUC for XGBoost:0.9778156996587031
+2024-01-10/10:25:19		Entered the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:25:20		Naive Bayes best params: {'var_smoothing': 0.5}. Exited the get_best_params_for_naive_bayes method of the Model_Finder class
+2024-01-10/10:25:20		AUC for NB:0.8352606510074068
+2024-01-10/10:25:20		Entered the save_model method of the File_Operation class
+2024-01-10/10:25:20		Model File XGBoost2 saved. Exited the save_model method of the Model_Finder class
+2024-01-10/10:25:20		Successful End of Training

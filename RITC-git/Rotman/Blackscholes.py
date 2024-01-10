@@ -3,42 +3,37 @@ def bsm_call_value(S0, K, r, T, sigma):
     from math import log, sqrt, exp
     import numpy as np
     from scipy import stats
-    
     S0 = float(S0)
     d1 = ( np.log(S0/K) + (r + sigma**2/2.)*T ) / (sigma*np.sqrt(T))
     d2 = ( np.log(S0/K) + (r - sigma**2/2.)*T ) / (sigma*np.sqrt(T))
     option_pv = (S0*stats.norm.cdf(d1, 0.0, 1.0)) - (K*np.exp(-r*T)*stats.norm.cdf(d2, 0.0, 1.0))
-    
     return option_pv
-#Calculatint Vega of Options
+
+#Calculating Vega of Options
+
 def bsm_vega(S0, K, r, T, sigma):
 
     from math import log, sqrt, exp
     import numpy as np
     from scipy import stats
-    
     S0 = float(S0)
     d1 = ( np.log(S0/K) + (r + sigma**2/2.)*T ) / (sigma*np.sqrt(T))
     vega = S0 * stats.norm.cdf(d1, 0.0, 1.0) * np.sqrt(T)
-    
     return vega
 
 #Call Implied Vol Cal
-def bsm_call_imp_vol(S0, K, T, r, C0, sigma_est):
 
+def bsm_call_imp_vol(S0, K, T, r, C0, sigma_est):
     sigma_est -= ((bsm_call_value(S0, K, r, T, sigma_est)-C0)
                     / bsm_vega(S0, K, r, T, sigma_est))
     return sigma_est
-
 
 def bsm_put_value(S0, K, r, T, sigma):
     from math import log, sqrt, exp
     import numpy as np
     from scipy import stats
-
     S0 = float(S0)
     d1 = (np.log(S0 / K) + (r + sigma ** 2 / 2.) * T) / (sigma * np.sqrt(T))
-
     d2 = (np.log(S0 / K) + (r - sigma ** 2 / 2.) * T) / (sigma * np.sqrt(T))
     option_pv = (K * np.exp(-r * T) * stats.norm.cdf(-d2, 0.0, 1.0))-(S0 * stats.norm.cdf(-d1, 0.0, 1.0))
 
@@ -82,6 +77,7 @@ def implied_volc(price,s0,K,T,r):
         if price - (price_implied) < 0.001:
             return sigma
         sigma += 0.001
+
 def implied_volp(price,s0,K,T,r):
     import numpy as np
     from scipy import stats

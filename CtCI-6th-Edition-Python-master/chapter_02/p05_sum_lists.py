@@ -1,7 +1,6 @@
 import pytest
 
-from chapter_02.linked_list import LinkedList
-
+from linked_list import LinkedList
 
 def sum_lists(ll_a, ll_b):
     n1, n2 = ll_a.head, ll_b.head
@@ -48,7 +47,6 @@ def sum_lists_recursive(ll_a, ll_b) -> "NumericLinkedList":
 
     return sum_lists_helper(ll_a.head, ll_b.head, 0, NumericLinkedList())
 
-
 class NumericLinkedList(LinkedList):
     def __init__(self, values=None):
         """handle integer as input"""
@@ -57,29 +55,23 @@ class NumericLinkedList(LinkedList):
             values.reverse()
         elif isinstance(values, list):
             values = values.copy()
-
         super().__init__(values)
-
     def numeric_value(self):
         number = 0
         for place, node in enumerate(self):
             number += node.value * 10**place
         return number
 
-
 def test_numeric_linked_list():
     ll = NumericLinkedList(321)
     assert ll.numeric_value() == 321
     assert ll.values() == [1, 2, 3]
 
-
 testable_functions = (sum_lists, sum_lists_recursive)
-
 
 @pytest.fixture(params=testable_functions)
 def linked_list_summing_function(request):
     return request.param
-
 
 test_cases = (
     # inputs can either be list of integer or integers
@@ -93,7 +85,6 @@ test_cases = (
     pytest.param([9, 9, 9], [1], [0, 0, 0, 1], id="carry end"),
     pytest.param([9, 9, 9], [9, 9, 9], [8, 9, 9, 1], id="multiple carry"),
 )
-
 
 @pytest.mark.parametrize("a, b, expected", test_cases)
 def test_linked_list_addition(linked_list_summing_function, a, b, expected):
@@ -109,14 +100,12 @@ def test_linked_list_addition(linked_list_summing_function, a, b, expected):
     ll_result_reverse = linked_list_summing_function(ll_b, ll_a)
     assert ll_result_reverse.values() == expected
 
-
 def example():
     ll_a = LinkedList.generate(4, 0, 9)
     ll_b = LinkedList.generate(3, 0, 9)
     print(ll_a)
     print(ll_b)
     print(sum_lists(ll_a, ll_b))
-
 
 if __name__ == "__main__":
     example()

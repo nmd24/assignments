@@ -1,6 +1,5 @@
 import collections
 
-
 def count_baby_names(name_counts, synonyms):
     parent = {}
     for name in name_counts.keys():
@@ -27,7 +26,6 @@ def count_baby_names(name_counts, synonyms):
         res[root] += name_counts[key]
     return dict(res)
 
-
 test_cases = [
     # name_counts, synonyms, expected_counts
     [
@@ -53,11 +51,9 @@ test_cases = [
     ]
 ]
 
-
 def test_baby_names():
     for name_counts, synonyms, expected_counts in test_cases:
         assert count_baby_names(name_counts, synonyms) == expected_counts
-
 
 if __name__ == "__main__":
     test_baby_names()
